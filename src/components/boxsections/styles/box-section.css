@@ -6,18 +6,20 @@
 
 .sm-box-tp {
   width: 100%;
-  height: 50vh;
+  height: 440px;
   padding: 55px;
+  padding-bottom: 40px;
 }
 
 .sm-box-bt {
   width: 100%;
-  height: 50vh;
+  height: 440px;
   padding: 55px;
+  padding-top: 40px;
 }
 
 .row-1 {
-  height: 100vh;
+  height: 100%;
 }
 
 .cv-outer-div {
@@ -84,7 +86,7 @@
   transition: all .4s ease-in-out;
 }
 
-@media screen and (max-width: 1330px){
+@media screen and (max-width: 1280px){
   .box {
     width: 100%;
   }
