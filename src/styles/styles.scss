@@ -51,3 +51,19 @@ body {
   }
 
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1680px){
+  
+  p, h4 {
+    font-size: 12px
+  }
+
+  h1 {
+    font-size: 50px
+    }
+
+  h2 {
+    display: inline;
+    font-size: 25px 
+  }
+}

@@ -10,17 +10,22 @@ import Food from './boxsections/Food.js';
 const BoxSection = () => {
   return (
     <div id="container">
-      <Row className="row-1" type="flex" >
+      <Row className="row-1" type="flex">
         <Col className="lg-box" xs={24} sm={24} xl={12}>
           <Cv/>
         </Col>
         <Col xs={24} sm={24} xl={12}>
-          <Row className="row-2" type="flex" align="middle">
+          <Row className="row-2" type="flex">
             <Col className="sm-box-tp" >
               <Photo/>
             </Col>
           </Row>
-          <Row className="row-3" type="flex" align="middle">
+          <Row className="row-3" type="flex">
+            <Col className="sm-box-bt" >
+              <Food/>
+            </Col>
+          </Row>
+          <Row className="row-4" type="flex">
             <Col className="sm-box-bt" >
               <Food/>
             </Col>
@@ -32,3 +37,4 @@ const BoxSection = () => {
 };
 
 export default BoxSection;
+
