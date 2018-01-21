@@ -16,9 +16,9 @@ const BoxSection = () => {
           <Cv/>
         </Col>
         <Col xs={24} sm={24} xl={12}>
-          <Row className="row-2" type="flex">
+          <Row className="row-4" type="flex">
             <Col className="sm-box-bt" >
-              <Photo/>
+              <Me/>
             </Col>
           </Row>
           <Row className="row-3" type="flex">
@@ -26,9 +26,9 @@ const BoxSection = () => {
               <Food/>
             </Col>
           </Row>
-          <Row className="row-4" type="flex">
+          <Row className="row-2" type="flex">
             <Col className="sm-box-bt" >
-              <Me/>
+              <Photo/>
             </Col>
           </Row>
         </Col>
