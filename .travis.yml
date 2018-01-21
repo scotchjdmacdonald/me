@@ -1,3 +1,4 @@
+language: node_js
 node_js:
   - "stable"
 notifications:
@@ -23,4 +24,3 @@ deploy:
   region: ap-southeast-2
   local_dir: build
   skip_cleanup: true
-
