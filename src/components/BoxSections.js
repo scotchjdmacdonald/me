@@ -3,8 +3,9 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import './boxsections/styles/box-section.css';
 import Cv from './boxsections/Cv.js';
-import Photo from './boxsections/Photo.js';
-import Food from './boxsections/Food.js';
+import Photo from './boxsections/Photo';
+import Food from './boxsections/Food';
+import Me from './boxsections/Me'
 
 
 const BoxSection = () => {
@@ -16,7 +17,7 @@ const BoxSection = () => {
         </Col>
         <Col xs={24} sm={24} xl={12}>
           <Row className="row-2" type="flex">
-            <Col className="sm-box-tp" >
+            <Col className="sm-box-bt" >
               <Photo/>
             </Col>
           </Row>
@@ -27,7 +28,7 @@ const BoxSection = () => {
           </Row>
           <Row className="row-4" type="flex">
             <Col className="sm-box-bt" >
-              <Food/>
+              <Me/>
             </Col>
           </Row>
         </Col>
