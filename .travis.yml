@@ -3,23 +3,28 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  # LTS version
   - "8.0"
 notifications:
   email:
-    # on_success: change # only if status change from fail to success
-    # on_failure: always # if there is a fail
-    # recipients:
+    on_failure: always
+    recipients:
+      - scotchjdmacdonald@gmail.com
 cache:
   directories:
     - node_modules
 install:
   - npm install
-before_script:
-  - export CI=false
+script: 
+  - npm run build
 deploy:
+    on: 
+      branch: master
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: scotchmacdonald.me
+  endpoint: scotchmacdonald.me.s3-website-ap-southeast-2.amazonaws.com
+  region: ap-southeast-2
+  local_dir: build
   skip_cleanup: true
-  provider: script
-  script: npm run build
-  on:
-    branch: ["master"]
+
