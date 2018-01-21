@@ -1,3 +1,4 @@
+dist: trusty
 language: node_js
 node_js:
   - "stable"
@@ -8,14 +9,11 @@ notifications:
       - scotchjdmacdonald@gmail.com
 cache:
   directories:
-    - node_modules
-install:
-  - npm install
-script: 
+  - node_modules
+script:
+  - npm test
   - npm run build
 deploy:
-    on: 
-      branch: master
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
@@ -24,3 +22,5 @@ deploy:
   region: ap-southeast-2
   local_dir: build
   skip_cleanup: true
+  on: 
+    branch: master
