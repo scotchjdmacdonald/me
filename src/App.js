@@ -3,8 +3,7 @@ import HomePage from './components/HomePage';
 import MePage from './components/MePage';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 class App extends Component {
