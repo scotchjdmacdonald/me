@@ -4,7 +4,7 @@ import './styles/box-section.css';
 
 const Me = () => {
   return (
-    <div  className="box lw-box">
+    <div className="box lw-box">
       <div className="title-div">
         <h1 className="photo-title">life and work</h1>
       </div>

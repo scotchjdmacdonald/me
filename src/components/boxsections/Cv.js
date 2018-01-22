@@ -9,7 +9,7 @@ const title = (
     <h1 className="title">Scotch<br/>Macdonald</h1>
     <br/>
     <p>I am a <Link to="/me" ><h2 className="title-text">  software developer  </h2></Link> living in Melbourne, Australia.
-      Who is also a passionate<a href="https://www.instagram.com/scotch_and_rose/"><h2 className="title-text">  foodie  </h2></a>
+      Who is also a passionate<a href="http://scotchandrose.net/"><h2 className="title-text">  foodie  </h2></a>
       and a dabbler in<h2 className="title-text">  film photography  </h2>
     </p>
   </div>

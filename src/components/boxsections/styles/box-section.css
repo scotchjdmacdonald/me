@@ -7,7 +7,7 @@
 
 .sm-box-tp {
   width: 100%;
-  height: 360px;
+  height: 200px;
   padding: 55px;
   padding-top: 0px;
   padding-bottom: 20px;
@@ -15,7 +15,7 @@
 
 .sm-box-bt {
   width: 100%;
-  height: 360px;
+  height: 250px;
   padding: 55px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -33,13 +33,17 @@
 }
 
 .cv-box {
-  background-color:transparent;
+  background-color: transparent;
   margin-bottom: 20px;
 }
 
+.lw-box {
+  background-color:  rgba(0, 0, 0, 0.1);
+
+}
+
 .ph-box {
-  background-color: transparent;
-  /* background-color: lightskyblue; */
+  background-color: rgba(0, 0, 0, 0.1);
   transition: all .4s ease-in-out;
 }
 
@@ -49,7 +53,7 @@
 }
 
 .fd-box {
-  background-color: transparent/*rosybrown;*/;
+  background-color: rgba(0, 0, 0, 0.1);
   transition: all .4s ease-in-out;
 }
 
@@ -71,7 +75,6 @@
   position: relative;
   display: table;
 }
-
 
 .title-text {
   transition: all .2s ease-in-out;
