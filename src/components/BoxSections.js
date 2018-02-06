@@ -10,7 +10,7 @@ import Food from './boxsections/Food';
 import Me from './boxsections/Me'
 
 
-class BoxSection extends React.Component {
+export default class BoxSection extends React.Component {
 
   render() {
     return (
@@ -47,22 +47,3 @@ BoxSection.propTypes = {
   fdHover: PropTypes.bool,
   meHover: PropTypes.bool
 };
-
-function mapStateToProps(state) {
-  return {
-    stuffs: state.stuffs
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    stuffActions: bindActionCreators(stuffActions, dispatch)
-  };
-}
-
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BoxSection);
-
