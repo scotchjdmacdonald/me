@@ -1,6 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import * as actionTypes from '../reducers/actionTypes'
+// import {connect} from 'react-redux';
+// import * as actionTypes from '../reducers/actionTypes'
 import PropTypes from 'prop-types';
 import { Row, Col } from 'antd';
 import './boxsections/styles/box-section.css';
